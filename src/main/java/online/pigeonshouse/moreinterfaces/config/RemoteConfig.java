@@ -9,6 +9,7 @@ import online.pigeonshouse.moreinterfaces.netty.SerializeFactory;
 import online.pigeonshouse.moreinterfaces.trendsobject.TrendsObject;
 import online.pigeonshouse.moreinterfaces.trendsobject.TrendsObjectFactory;
 import online.pigeonshouse.moreinterfaces.utils.FileUtil;
+import online.pigeonshouse.moreinterfaces.utils.ListUtil;
 import online.pigeonshouse.moreinterfaces.utils.StringUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,7 +35,7 @@ public class RemoteConfig {
             TrendsObjectFactory.build(new HashSet<>());
 
     public final TrendsObject<HashSet<RemotePower>> powers =
-            TrendsObjectFactory.build(new HashSet<>(List.of(RemotePower.DEFAULT)));
+            TrendsObjectFactory.build(new HashSet<>(ListUtil.of(RemotePower.DEFAULT)));
 
     public Integer getPort() {
         return port.get();
