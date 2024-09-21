@@ -1,5 +1,7 @@
 MoreInterfaces 是一个为Minecraft提供第三方网络接口的Mod，为了方便理解，可以将其视作超级简易的一款RPC插件。
 ## 简介
+[Jump to English](README_cn.md)
+
 MoreInterfaces 的服务对象为包括普通玩家在内的第三方开发者
 并将会尽可能的为第三方软件的控制提供几乎Minecraft全部版本（`1.14以上`）的网络api接口
 通过内置的多种api，您可以在外部实现动态的服务更新！
