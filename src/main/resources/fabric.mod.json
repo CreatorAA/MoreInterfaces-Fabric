@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "moreinterfaces",
+  "version": "${version}",
+  "name": "MoreInterfaces",
+  "description": "Simple interface.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "entrypoints": {
+    "main": [
+      "online.pigeonshouse.moreinterfaces.MoreInterfaces"
+    ],
+    "client": [
+      "online.pigeonshouse.moreinterfaces.client.MoreInterfacesClient"
+    ]
+  },
+  "mixins": [
+    "moreinterfaces.mixins.json",
+    {
+      "config": "moreinterfaces.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
