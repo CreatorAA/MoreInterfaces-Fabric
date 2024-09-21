@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "online.pigeonshouse.moreinterfaces.client.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "ClientPacketListenerMixin",
+    "ClientPlayerMixin",
+    "MIClientSource",
+    "MinecraftMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
