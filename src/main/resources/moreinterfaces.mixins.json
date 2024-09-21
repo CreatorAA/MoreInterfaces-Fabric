@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "online.pigeonshouse.moreinterfaces.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ClipContextMixin",
+    "CommandsMixin",
+    "ConnectionMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "MIClientConnection",
+    "MinecraftServerMixin",
+    "PlayerListMixin",
+    "ServerEntityHandlerMixin",
+    "ServerPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
