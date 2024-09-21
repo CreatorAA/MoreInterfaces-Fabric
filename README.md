@@ -1,5 +1,5 @@
 # MoreInterfaces
-[跳转到中文版本](#README_cn.md)
+[跳转到中文版本](README_cn.md)
 
 MoreInterfaces is a mod that provides third-party network interfaces for Minecraft. To make it easier to understand, you can think of it as a super simple RPC plugin.
 
