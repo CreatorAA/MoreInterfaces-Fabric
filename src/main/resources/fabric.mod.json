@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "moreinterfaces",
+  "version": "${version}",
+  "name": "MoreInterfaces-Fabric1.16.5",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/adm/MoreInterfaces-Fabric1.20.2"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "online.pigeonshouse.moreinterfaces.MoreInterfaces"
+    ],
+    "client": [
+      "online.pigeonshouse.moreinterfaces.client.MoreInterfacesClient"
+    ]
+    "client": [
+      "online.pigeonshouse.moreinterfaces.moreinterfaces.client.MoreInterfacesClient"
+    ],
+    "main": [
+      "online.pigeonshouse.moreinterfaces.moreinterfaces.MoreInterfaces"
+    ]
+  },
+  "mixins": [
+    "moreinterfaces.mixins.json",
+    {
+      "config": "moreinterfaces.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  },
+  "accessWidener": "moreinterfaces.accesswidener"
+}
