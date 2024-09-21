@@ -17,12 +17,6 @@
     "client": [
       "online.pigeonshouse.moreinterfaces.client.MoreInterfacesClient"
     ]
-    "client": [
-      "online.pigeonshouse.moreinterfaces.moreinterfaces.client.MoreInterfacesClient"
-    ],
-    "main": [
-      "online.pigeonshouse.moreinterfaces.moreinterfaces.MoreInterfaces"
-    ]
   },
   "mixins": [
     "moreinterfaces.mixins.json",
