@@ -60,7 +60,7 @@ public class ClientRenderUtil {
         MultiBufferSource.BufferSource immediate = Minecraft.getInstance()
                 .renderBuffers().bufferSource();
 
-        boolean bl = !model.usesBlockLight();
+        boolean bl = model.usesBlockLight();
 
         if (bl) {
             Lighting.setupForFlatItems();
