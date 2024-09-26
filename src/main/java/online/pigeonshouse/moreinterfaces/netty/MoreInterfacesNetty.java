@@ -88,7 +88,6 @@ public class MoreInterfacesNetty extends ChannelInitializer<NioSocketChannel> {
         channel.writeAndFlush(msg).sync();
     }
 
-    public static final MessageCodecSharable CODEC = new MessageCodecSharable();
     public static final TimeOutHandler TIME_OUT_HANDLER = new TimeOutHandler();
     public static final CommandMessageHandler COMMAND_MESSAGE_HANDLER = new CommandMessageHandler();
 
@@ -97,7 +96,7 @@ public class MoreInterfacesNetty extends ChannelInitializer<NioSocketChannel> {
         ChannelPipeline pipeline = ch.pipeline();
 
         pipeline.addLast(new MessageLengthFieldDecoder())
-                .addLast(CODEC)
+                .addLast(new MessageCodecSharable())
                 .addLast(new IdleStateHandler(10, 5, 0, TimeUnit.MINUTES))
                 .addLast(TIME_OUT_HANDLER)
                 .addLast(COMMAND_MESSAGE_HANDLER);
