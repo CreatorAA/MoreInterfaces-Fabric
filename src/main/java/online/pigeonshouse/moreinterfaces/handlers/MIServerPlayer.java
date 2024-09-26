@@ -121,7 +121,8 @@ public class MIServerPlayer extends ServerPlayer {
     public void kill(Component reason) {
         shakeOff();
 
-        if (reason.getContents() instanceof TranslatableContents && ((TranslatableContents) reason).getKey().equals("multiplayer.disconnect.duplicate_login")) {
+        if (reason.getContents() instanceof TranslatableContents &&
+                ((TranslatableContents) reason.getContents()).getKey().equals("multiplayer.disconnect.duplicate_login")) {
             this.connection.onDisconnect(reason);
         } else {
             this.server.tell(new TickTask(this.server.getTickCount(), () -> {
